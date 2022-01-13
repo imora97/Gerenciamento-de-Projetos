@@ -11,8 +11,8 @@ class ListadeProjetos(QWidget):
 
         self.lista = ProjetoDAO.listaAll()
 
-        #for projeto in self.lista:
-        #    self.add_card(projeto)
+        for projeto in self.lista:
+           self.add_card(projeto)
 
     def add_card(self, projeto):
         self.painel_proj.addWidget(CardProjeto(projeto))

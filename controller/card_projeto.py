@@ -1,4 +1,6 @@
+
 from qt_core import *
+
 
 class CardProjeto(QWidget):
 
@@ -7,7 +9,7 @@ class CardProjeto(QWidget):
         uic.loadUi('view/card_projeto.ui', self)
 
         self.projeto = projeto
-
+        
         self.nome_do_projeto.setText(projeto.nome)
 
         self.abrir_button.clicked.connect(self.abreprojeto)
